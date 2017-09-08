@@ -26,6 +26,18 @@ namespace MvcFox
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+
+            bundles.Add(new StyleBundle("~/login/css").Include(
+                      "~/bootstrap/dist/css/bootstrap.min.css",
+                      "~/dist/css/AdminLTE.min.css",
+                      "~/plugins/iCheck/square/blue.css",
+                      "~/fonts/font-awesome/css/font-awesome.min.css",
+                      "~/Ionicons/css/ionicons.min.css"));
+
+            bundles.Add(new ScriptBundle("~/login/js").Include(
+                      "~/jquery/dist/jquery.min.js",
+                      "~/bootstrap/dist/js/bootstrap.min.js",
+                      "~/plugins/iCheck/icheck.min.js"));
         }
     }
 }
