@@ -37,6 +37,8 @@ namespace MvcFox.Models
         {
         }
 
+        public DbSet<Feedback> Feedbacks { get; set; }
+
         public DbSet<Student> Students { get; set; }
 
         public static ApplicationDbContext Create()
