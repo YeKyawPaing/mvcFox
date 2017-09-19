@@ -21,7 +21,8 @@ namespace MvcFox.Controllers
             return View();
         }
 
-        [CustomAuthorize(Roles = "Sales")]
+        //[CustomAuthorize(Roles = "Sales")]
+        
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
